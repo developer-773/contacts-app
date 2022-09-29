@@ -16,7 +16,7 @@
                 <div class="d-flex justify-content-between align-items-center mb-5">
                     <h2 class="">Contact Details</h2>
                     <h2 class="available">Available contacts</h2>
-                    <button class="btn btn-danger delete" type="button">Delete All</button>
+                    <button class="btn btn-danger delete" type="button" disabled>Delete All</button>
 
                     
                 </div>
@@ -37,7 +37,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                   </div>                  
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-12 col-md-6 col-xl-4 mb-5 mb-md-0">
                         <form class="form">
                             <div class="input-box">
                                 <label class="mt-5">Name</label>
@@ -45,12 +45,12 @@
                                 <label class="mt-5">Relationship</label>
                                 <input class="surname form-control mb-5" type="text">
                                 <label>Telephone number</label>
-                                <input class="tel form-control mb-5" type="tel" placeholder="Telephone">
-                                <button class="btn btn-primary mb-5" type="submit">Add contact</button>
+                                <input class="tel form-control mb-5" type="tel" >
+                                <button class="btn btn-primary mb-5" type="submit">Add to contacts</button>
                             </div>
                         </form>
                     </div>
-                    <div class="col-8">
+                    <div class="col-12 col-md-6 col-xl-8 contacts-list">
                         
                     </div>
                 </div>
@@ -59,6 +59,7 @@
     </main>
     <footer></footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+    <script src="./data.js"></script>
     <script src="./app.js"></script>
 </body>
 </html>
