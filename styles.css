@@ -1,0 +1,29 @@
+.alertt{
+    height: 20px !important;
+}
+
+svg{
+    width: 25px;
+    height: 25px;
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+
+.contacts__item {
+    width: 100%;
+    max-width: 335px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.call {
+    display: block;
+    cursor: pointer;
+    text-align: center;
+}
