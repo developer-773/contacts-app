@@ -75,7 +75,7 @@ elForm.addEventListener("submit", function(evt) {
 //Delete all contacts from list
 elDeleteButton.addEventListener("click", function(ev) {
     ev.preventDefault();
-    let deleteItems = localStorage.removeItem('contactsArray');
+    let deleteItems = localStorage.clear();
     window.location.reload();
 });
 
