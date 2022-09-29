@@ -69,13 +69,19 @@ function createContacts(arr){
         let newParagraphName = document.createElement("p");
         let newParagraphSurName = document.createElement("p");
         let newTel = document.createElement("a");
+        let newCallBtn = document.createElement("a");
         
         newItemTop.classList.add("d-flex", "justify-content-evenly");
         newParagraphName.classList.add("fw-semibold");
         newParagraphSurName.classList.add("fw-semibold");
         newTel.classList.add("text-decoration-none", "text-dark", "call");
-        newTel.setAttribute("onclick", "window.open('tel:900300400');");
-        
+
+
+        newTel.href= "tel:" +i.number;
+
+        newCallBtn.classList.add("btn", "btn-primary", "d-block", "call-btn");
+        newCallBtn.textContent = "Call";
+        newCallBtn.href= "tel:" + i.number;
 
         //Contact names
         newSpanName = document.createElement("span", "fw-normal");
@@ -108,6 +114,7 @@ function createContacts(arr){
         newItemTop.appendChild(newTextContent);
         newItem.appendChild(newItemTop);
         newItem.appendChild(newTel);
+        newItem.appendChild(newCallBtn);
         newItem.classList.add("contacts__item", "mb-3","mr-3", "rounded");
         newList.appendChild(newItem);
         newList.classList.add("list-unstyled");
